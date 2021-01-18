@@ -21,31 +21,17 @@
     <!-- End Google Analytics -->
 
     <!-- Clearbit -->
-    <script>
-      ga_trackers = [];
-      ga.getAll().forEach(function(x, i) {
-      ga_trackers.push(x.get('name'))
-      })
-      ga_trackers.forEach(function(gaName) {
-      ga(gaName + '.require', 'Clearbit', {
-      "mapping":{
-      "type":"Clearbit_Type",
-      "companyName":"Clearbit_CompanyName", 
-      "companyDomain":"ClearBit_CompanyDomain",
-      "companyIndustry":"Clearbit_Industry", 
-      "companyEstimatedAnnualRevenue":"ClearBit_EstimatedRevenueRange"
-      }})
-      })
-    </script>
 
-    <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_bc4c5f498564f53d834753e3b31906c6">
-    </script>
     
     <!-- End Clearbit -->
     
     <title>ClearBit Sample Site</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57684TS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <h1>Please work</h1>
     
     <p>Just making sure this site works</p>
