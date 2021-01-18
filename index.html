@@ -20,6 +20,29 @@
     </script>
     <!-- End Google Analytics -->
 
+    <!-- Clearbit -->
+    <script>
+      ga_trackers = [];
+      ga.getAll().forEach(function(x, i) {
+      ga_trackers.push(x.get('name'))
+      })
+      ga_trackers.forEach(function(gaName) {
+      ga(gaName + '.require', 'Clearbit', {
+      "mapping":{
+      "type":"Clearbit_Type",
+      "companyName":"Clearbit_CompanyName", 
+      "companyDomain":"ClearBit_CompanyDomain",
+      "companyIndustry":"Clearbit_Industry", 
+      "companyEstimatedAnnualRevenue":"ClearBit_EstimatedRevenueRange"
+      }})
+      })
+    </script>
+
+    <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_bc4c5f498564f53d834753e3b31906c6">
+    </script>
+    
+    <!-- End Clearbit -->
+    
     <title>ClearBit Sample Site</title>
   </head>
   <body>
